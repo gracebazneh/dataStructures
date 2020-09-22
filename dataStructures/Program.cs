@@ -6,8 +6,17 @@ namespace dataStructures
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.ReadLine();
+
+            Stack a = new Stack(10);
+            try
+            {
+                a.Pop();
+            }
+            catch
+            {
+
+            }
+
         }
     }
 }

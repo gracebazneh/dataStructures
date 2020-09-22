@@ -19,13 +19,29 @@ namespace dataStructures
       
         public void Push(int item)
         {
-
+            if(sp < max)
+            {
+                stack[sp] = item;
+                sp++;
+            }
+            throw new Exception("stack is full.");
         }
-    
+       
 
         public int Pop()
         {
-            return 0;
+            if (sp > 0)
+            {
+                sp--;
+                return stack[sp];
+            }
+            throw new Exception("stack is empty.");
+
+            //throw new Exception("stack is empty.");
+               // return 0;
+            
+
+            //throw new Exception("stack is empty.");
         }
     }
 }
